@@ -1,0 +1,8 @@
+- Fixed bug on category.html (the grid view, compact view and list view buttons do not work)
+- Updated script.js
+
+# No HTML changes in 1.6
+# To upgrade 1.5 to simply replace script.js into assets/js/
+
+# Please email me if you find out some new bugs or issues :)
+# gtanim@gmail.com

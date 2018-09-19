@@ -1,0 +1,155 @@
+@extends('layouts.app')
+
+@section('title', 'About US')
+
+@section('intro')
+<div class="intro-inner">
+    <div class="about-intro" style="background:url(dist/images/bg2.jpg) no-repeat center; background-size:cover;">
+        <div class="dtable hw100">
+            <div class="dtable-cell hw100">
+                <div class="container text-center">
+                    <h1 class="intro-title animated fadeInDown"> 3E</h1>
+                    <h1 class="intro-title animated fadeInDown"> Easy Job - Easy Money - Easy Life</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+
+@section('content')
+<div class="main-container inner-page">
+    <div class="container">
+        <div class="section-content">
+            <div class="row ">
+                <h1 class="text-center title-1"> Find Us Here! </h1>
+                <hr class="center-block small text-hr">
+                {{-- profile card --}}
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card hovercard">
+                        <div class="cardheader1">
+                        </div>
+                        <div class="avatar">
+                            <img alt="" src="{{ asset('alvin.jpg')}}">
+                        </div>
+                        <div class="info">
+                            <div class="title">
+                                <a target="_blank" href="/">Alvin Mudhoffar</a>
+                            </div>
+                            <div class="desc">Software Engineer</div>
+                            <div class="desc">Software Developer</div>
+                            <div class="desc">Web Developer</div>
+                            <div class="desc">Administrator Lab RPL</div>
+                        </div>
+                        <div class="bottom">
+                            <a class="btn btn-primary btn-twitter btn-sm" href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-danger btn-sm" rel="publisher" href="#"></i>
+                            </a>
+                            <a class="btn btn-primary btn-sm" rel="publisher" href="https://www.facebook.com/profile.php?id=100012115416206&fref=ts">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {{-- profile 2 --}}
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card hovercard">
+                        <div class="cardheader2">
+                        </div>
+                        <div class="avatar">
+                            <img alt="" src="{{ asset('hero.jpg')}}">
+                        </div>
+                        <div class="info">
+                            <div class="title">
+                                <a target="_blank" href="/">Hero Akbar Ahmadi</a>
+                            </div>
+                            <div class="desc">Network Engineer</div>
+                            <div class="desc">Network Security</div>
+                            <div class="desc">Web Developer</div>
+                            <div class="desc">Administrator Lab NCC</div>
+                        </div>
+                        <div class="bottom">
+                            <a class="btn btn-primary btn-twitter btn-sm" href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-danger btn-sm" rel="publisher" href="#">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a class="btn btn-primary btn-sm" rel="publisher" href="https://www.facebook.com/hero.lionel">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {{-- profile 3 --}}
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card hovercard">
+                        <div class="cardheader3">
+                        </div>
+                        <div class="avatar">
+                            <img alt="" src="{{ asset('awan.jpg')}}">
+                        </div>
+                        <div class="info">
+                            <div class="title">
+                                <a target="_blank" href="/">Cahya Putra Hikmawan</a>
+                            </div>
+                            <div class="desc">Network Engineer</div>
+                            <div class="desc">Network Infrastructure</div>
+                            <div class="desc">Web Developer</div>
+                            <div class="desc">Administrator Lab AJK</div>
+                        </div>
+                        <div class="bottom">
+                            <a class="btn btn-primary btn-twitter btn-sm" href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-danger btn-sm" rel="publisher" href="#">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a class="btn btn-primary btn-sm" rel="publisher" href="https://www.facebook.com/cp.hikmawan">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+
+@section('css')
+    {{-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> --}}
+    <link href="{{ URL::asset('stylecard.css') }}" rel="stylesheet">
+@endsection
+
+@section('page-info')
+<div class="parallaxbox about-parallax-bottom">
+    <div class="container">
+        <div class="row text-center featuredbox">
+            <div class="col-sm-4 xs-gap">
+                <div class="inner">
+                    <div class="icon-box-wrap"><i class="icon-book-open ln-shadow-box shape-3"></i></div>
+                    <h3 class="title-4">Customer service</h3>
+                    <a href="#"><p>customer-service@golekkerjo.com</p></a>
+                </div>
+            </div>
+            <div class="col-sm-4 xs-gap">
+                <div class="inner">
+                    <div class="icon-box-wrap"><i class=" icon-lightbulb ln-shadow-box shape-6"></i></div>
+                    <h3 class="title-4">Seller satisfaction</h3>
+                    <p>Get more job for freelancer here</p>
+                </div>
+            </div>
+            <div class="col-sm-4 xs-gap">
+                <div class="inner">
+                    <div class="icon-box-wrap"><i class="icon-megaphone ln-shadow-box shape-5"></i></div>
+                    <h3 class="title-4">Best Offers </h3>
+                    <p>Get full access just for $5 a month</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
